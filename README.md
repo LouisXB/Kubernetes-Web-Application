@@ -17,8 +17,9 @@ Below are the series of steps I took in order to complete this project.
 - AWS Elastic Kubernetes Service
 - AWS Elastic Container Repository
 - AWS EC2
-- AWS Roles and Policies
+- IAM Roles and Policies
 - Load Balancer
+- Auto-Scaling
 
 ### Initial Setup
 
