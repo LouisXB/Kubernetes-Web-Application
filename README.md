@@ -168,15 +168,18 @@ Next I pushed the container to ECR which would allow me to use the image in Kube
 Open AWS > Elastic Container Repository > website repository > select "view push commands" 
 
 Copy and pasted the first command in the VS Code terminal: 
-```aws ecr get-login-password --region us-east-1 |sudo docker login --username AWS --password-stdin [MY ACCOUNT ID].dkr.ecr.us-east-1.amazonaws.com
+```
+aws ecr get-login-password --region us-east-1 |sudo docker login --username AWS --password-stdin [MY ACCOUNT ID].dkr.ecr.us-east-1.amazonaws.com
  ```
 
 Copy and pasted the third command in the VS Code terminal: 
-```sudo docker tag portfolioproject01website:latest [MY ACCOUNT NUMBER].dkr.ecr.us-east-1.amazonaws.com/portfolioproject01website:latest
+```
+sudo docker tag portfolioproject01website:latest [MY ACCOUNT NUMBER].dkr.ecr.us-east-1.amazonaws.com/portfolioproject01website:latest
  ```
 
 Copy and pasted the fourth command in the VS Code terminal: 
-```sudo docker push [MY ACCOUNT NUMBER].dkr.ecr.us-east-1.amazonaws.com/portfolioproject01website:latest
+```
+sudo docker push [MY ACCOUNT NUMBER].dkr.ecr.us-east-1.amazonaws.com/portfolioproject01website:latest
  ```
 
 ![pushtoregistry](https://github.com/LouisXB/Kubernetes-Web-Application/assets/115196076/125135d2-4cea-45a6-845e-3879b8b1c291)
